@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demander un devis — Top Impex Company SARL</title>
+<meta name="description" content="Demandez un devis pour votre projet d'ingénierie, construction, procurement ou logistique auprès de T.I.C SARL.">
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader">
+    <img class="pl-logo" src="assets/images/logo.png" alt="T.I.C SARL">
+    <div class="pl-line"></div>
+  </div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/images/logo.png" alt="Top Impex Company SARL">
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="careers.html">Carrières</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="quote.html" class="nav-cta">Demander un devis</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-header" style="padding-bottom:3rem;">
+    <div class="ph-media">
+      <div class="ph-slide active"><img src="assets/images/quote-header.jpg" alt=""></div>
+    </div>
+    <div class="container ph-content">
+      <div class="breadcrumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; Demander un devis</div>
+      <h1>Demandez votre devis</h1>
+      <p>Trois étapes rapides — notre équipe technique étudie chaque demande avant de vous répondre.</p>
+    </div>
+  </section>
+
+  <!-- ===================== QUOTE FORM ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="quote-wrap">
+
+        <div class="quote-progress">
+          <div class="qp-step active" data-step="0">
+            <div class="qp-circle">1</div>
+            <div class="qp-label">Vos informations</div>
+          </div>
+          <div class="qp-line"></div>
+          <div class="qp-step" data-step="1">
+            <div class="qp-circle">2</div>
+            <div class="qp-label">Votre projet</div>
+          </div>
+          <div class="qp-line"></div>
+          <div class="qp-step" data-step="2">
+            <div class="qp-circle">3</div>
+            <div class="qp-label">Documents</div>
+          </div>
+          <div class="qp-line"></div>
+          <div class="qp-step" data-step="3">
+            <div class="qp-circle">4</div>
+            <div class="qp-label">Résumé</div>
+          </div>
+        </div>
+
+        <form id="quote-form" class="quote-form reveal">
+
+          <!-- STEP 1 — Contact info -->
+          <div class="quote-step active">
+            <h3 class="quote-step-title">Vos informations</h3>
+            <p class="quote-step-sub">Pour que nous sachions qui vous êtes et comment vous recontacter.</p>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="q-name">Nom complet</label>
+                <input type="text" id="q-name" required>
+              </div>
+              <div class="form-field">
+                <label for="q-company">Société</label>
+                <input type="text" id="q-company">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="q-email">Email</label>
+                <input type="email" id="q-email" required>
+              </div>
+              <div class="form-field">
+                <label for="q-phone">Téléphone</label>
+                <input type="tel" id="q-phone" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="q-country">Pays</label>
+                <input type="text" id="q-country" value="République Démocratique du Congo">
+              </div>
+              <div class="form-field">
+                <label for="q-contact-method">Moyen de contact préféré</label>
+                <select id="q-contact-method">
+                  <option>Email</option>
+                  <option>Téléphone</option>
+                  <option>WhatsApp</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="quote-nav">
+              <button type="button" class="btn btn-back invisible">Précédent</button>
+              <button type="button" class="btn btn-primary qs-next">Suivant</button>
+            </div>
+          </div>
+
+          <!-- STEP 2 — Project details -->
+          <div class="quote-step">
+            <h3 class="quote-step-title">Votre projet</h3>
+            <p class="quote-step-sub">Décrivez-nous le service recherché et les grandes lignes du projet.</p>
+
+            <div class="form-field">
+              <label for="q-service">Service souhaité</label>
+              <select id="q-service">
+                <option>Procurement général</option>
+                <option>Matériaux de construction</option>
+                <option>Services d'ingénierie</option>
+                <option>Forage</option>
+                <option>Maintenance industrielle</option>
+                <option>Réparation</option>
+                <option>Manufacture</option>
+                <option>Logistique &amp; gestion des stocks</option>
+                <option>Construction &amp; travaux publics</option>
+                <option>Structures mécaniques</option>
+                <option>Autre / Je ne sais pas encore</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="q-description">Description du projet</label>
+              <textarea id="q-description" placeholder="Contexte, localisation du site, quantités estimées, contraintes particulières..." required></textarea>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="q-budget">Budget indicatif (optionnel)</label>
+                <input type="text" id="q-budget" placeholder="Ex. 10 000 – 50 000 USD">
+              </div>
+              <div class="form-field">
+                <label for="q-timeline">Délai souhaité (optionnel)</label>
+                <input type="text" id="q-timeline" placeholder="Ex. Sous 4 à 6 semaines">
+              </div>
+            </div>
+
+            <div class="quote-nav">
+              <button type="button" class="btn btn-back qs-back">Précédent</button>
+              <button type="button" class="btn btn-primary qs-next">Suivant</button>
+            </div>
+          </div>
+
+          <!-- STEP 3 — Documents -->
+          <div class="quote-step">
+            <h3 class="quote-step-title">Plans &amp; documents techniques</h3>
+            <p class="quote-step-sub">Facultatif — utile si vous avez déjà des plans, métrés ou cahiers des charges.</p>
+
+            <div class="form-field">
+              <label>Plans / dessins techniques</label>
+              <div class="file-drop">
+                <input type="file" id="q-drawings" accept=".pdf,.dwg,.jpg,.png" multiple>
+                <div class="file-label">Cliquez ou déposez vos fichiers ici</div>
+                <div class="file-name" id="q-drawings-name"></div>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label>Documents techniques complémentaires</label>
+              <div class="file-drop">
+                <input type="file" id="q-docs" accept=".pdf,.doc,.docx,.xls,.xlsx" multiple>
+                <div class="file-label">Cliquez ou déposez vos fichiers ici</div>
+                <div class="file-name" id="q-docs-name"></div>
+              </div>
+            </div>
+
+            <div class="quote-nav">
+              <button type="button" class="btn btn-back qs-back">Précédent</button>
+              <button type="button" class="btn btn-primary qs-next">Suivant</button>
+            </div>
+          </div>
+
+          <!-- STEP 4 — Summary -->
+          <div class="quote-step">
+            <h3 class="quote-step-title">Vérifiez votre demande</h3>
+            <p class="quote-step-sub">Un dernier coup d'œil avant l'envoi — chaque demande reçoit une revue technique professionnelle.</p>
+
+            <div class="quote-summary">
+              <div><span>Nom</span><span id="qs-name">—</span></div>
+              <div><span>Société</span><span id="qs-company">—</span></div>
+              <div><span>Email</span><span id="qs-email">—</span></div>
+              <div><span>Téléphone</span><span id="qs-phone">—</span></div>
+              <div><span>Pays</span><span id="qs-country">—</span></div>
+              <div><span>Service</span><span id="qs-service">—</span></div>
+              <div><span>Budget indicatif</span><span id="qs-budget">—</span></div>
+              <div><span>Délai souhaité</span><span id="qs-timeline">—</span></div>
+              <div><span>Contact préféré</span><span id="qs-contact-method">—</span></div>
+            </div>
+
+            <p class="form-note">En soumettant, votre client mail s'ouvrira avec un message pré-rempli à destination de notre équipe. Pensez à joindre vos fichiers manuellement (les liens mailto ne transportent pas de pièces jointes). Vous pouvez aussi écrire directement à <a href="mailto:info@topimpexgroup.com" style="color:var(--red-bright);">info@topimpexgroup.com</a>.</p>
+
+            <div class="quote-nav">
+              <button type="button" class="btn btn-back qs-back">Précédent</button>
+              <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-logo">
+          <img src="assets/images/logo.png" alt="Top Impex Company SARL">
+          <p>Ingénierie, procurement, construction, logistique et infrastructure — au service de l'Afrique centrale.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Galerie</a></li>
+            <li><a href="careers.html">Carrières</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html">Ingénierie</a></li>
+            <li><a href="services.html">Construction</a></li>
+            <li><a href="services.html">Logistique</a></li>
+            <li><a href="services.html">Maintenance industrielle</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:info@topimpexgroup.com">info@topimpexgroup.com</a></li>
+            <li><a href="tel:+243820055520">+243 820 055 520</a></li>
+            <li>Kolwezi, Lualaba, RDC</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Top Impex Company SARL. Tous droits réservés.</span>
+        <div class="footer-legal">
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Conditions d'utilisation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
